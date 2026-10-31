@@ -1,89 +1,90 @@
-# 🤖 Chatbot IA
+# AI Chatbot
 
-Chatbot com Inteligência Artificial desenvolvido com Java, Spring Boot e interface web, utilizando o modelo LLaMA 70B via API do Groq para respostas em tempo real em português.
+AI chatbot with a web interface, built with Java and Spring Boot. It uses the LLaMA 3.3 70B model through the Groq API to answer in real time.
 
-## 💡 Sobre o Projeto
+## About the project
 
-O usuário acessa a interface pelo navegador, digita uma mensagem e recebe respostas geradas por IA em tempo real. O backend em Java processa a requisição e se comunica com a API do Groq, que utiliza o modelo LLaMA 3.3 70B da Meta.
+The user opens the chat in the browser, types a message and gets AI-generated answers in real time. The Java backend handles the request and talks to the Groq API, which runs Meta's LLaMA 3.3 70B model.
 
-## ✨ Funcionalidades
+## Features
 
-- ✅ Interface de chat visual acessível pelo navegador
-- ✅ Respostas geradas por IA (LLaMA 3.3 70B)
-- ✅ Comunicação em tempo real com indicador "Digitando..."
-- ✅ Respostas formatadas com suporte a negrito e quebras de linha
-- ✅ Envio de mensagem por botão ou tecla Enter
+- Browser-based chat interface
+- AI-generated answers (LLaMA 3.3 70B)
+- Real-time responses with a "typing..." indicator
+- Formatted answers with bold text and line breaks
+- Send messages with a button or the Enter key
 
-## 🛠️ Tecnologias Utilizadas
+## Tech stack
 
 - **Java 17+**
 - **Spring Boot 3.5**
 - **Groq API** (LLaMA 3.3 70B)
-- **HTML + CSS + JavaScript** (interface web)
+- **HTML + CSS + JavaScript** (web interface)
 - **Maven**
 
-## 🏗️ Arquitetura
+## Architecture
 
 ```
-Navegador (HTML/CSS/JS)
+Browser (HTML/CSS/JS)
         ↓ POST /chat
 ChatController (Spring Boot)
         ↓
 GroqService
-        ↓ HTTP Request
+        ↓ HTTP request
 Groq API (LLaMA 3.3 70B)
         ↓
-Resposta em português
+Response
 ```
 
-## 🚀 Como Rodar o Projeto
+## Running locally
 
-### Pré-requisitos
-- Java 17 ou superior
+### Requirements
+- Java 17 or later
 - Maven
-- Chave de API do Groq (gratuita)
+- A Groq API key (free)
 
-### Passo a passo
+### Steps
 
-1. Clone o repositório:
+1. Clone the repository:
 ```bash
 git clone https://github.com/tiagobanzato/chatbot-api.git
 ```
 
-2. Entre na pasta do projeto:
+2. Go to the project folder:
 ```bash
 cd chatbot-api
 ```
 
-3. Configure sua chave da API do Groq no arquivo `application.properties`:
+3. Add your Groq API key to `application.properties`:
 ```properties
-groq.api.key=SUA_CHAVE_AQUI
+groq.api.key=YOUR_KEY_HERE
 ```
-> Obtenha sua chave gratuitamente em [console.groq.com](https://console.groq.com)
+> You can get a free key at [console.groq.com](https://console.groq.com)
 
-4. Rode o projeto:
+4. Run the project:
 ```bash
 ./mvnw spring-boot:run
 ```
 
-5. Acesse no navegador:
+5. Open in your browser:
 ```
 http://localhost:8080
 ```
 
-## 💬 Como Usar
+## Usage
 
-1. Acesse `http://localhost:8080` no navegador
-2. Digite sua mensagem no campo de texto
-3. Pressione **Enter** ou clique em **Enviar**
-4. Aguarde a resposta da IA
+1. Open `http://localhost:8080` in your browser
+2. Type your message in the text field
+3. Press **Enter** or click **Enviar** (Send)
+4. Wait for the AI's answer
 
-## 🤖 Sobre o Modelo de IA
+## About the AI model
 
-O projeto utiliza o modelo **LLaMA 3.3 70B Versatile** da Meta, disponibilizado gratuitamente pela plataforma Groq. O assistente é configurado para responder sempre em português de forma clara e objetiva.
+The project uses Meta's **LLaMA 3.3 70B Versatile** model, available for free on the Groq platform. The assistant is currently configured to answer in Portuguese, clearly and concisely.
 
-## 👨‍💻 Autor
+## Author
 
-**Tiago Banzato**
-Estudante de Análise e Desenvolvimento de Sistemas 
+**Tiago Banzato**  
+Software developer · Dublin, Ireland  
 [![GitHub](https://img.shields.io/badge/GitHub-tiagobanzato-black?logo=github)](https://github.com/tiagobanzato)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-banzato-0A66C2?logo=linkedin)](https://www.linkedin.com/in/banzato)
