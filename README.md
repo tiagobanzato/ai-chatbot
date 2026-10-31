@@ -47,12 +47,12 @@ Response
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/tiagobanzato/chatbot-api.git
+git clone https://github.com/tiagobanzato/ai-chatbot.git
 ```
 
 2. Go to the project folder:
 ```bash
-cd chatbot-api
+cd ai-chatbot
 ```
 
 3. Add your Groq API key to `application.properties`:
